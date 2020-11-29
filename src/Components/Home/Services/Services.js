@@ -7,7 +7,7 @@ import loader from '../../../images/loader.gif'
 const Services = () => {
     const [allService,setAllService]=useState([])
     useEffect(()=>{
-        fetch('https://creative-agency-fullstack.herokuapp.com/show-all-service')
+        fetch('https://creative-agency-b038d.web.app/show-all-service')
         .then(res=>res.json())
         .then(result=>{
             setAllService(result)

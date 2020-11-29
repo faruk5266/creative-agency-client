@@ -13,7 +13,7 @@ const AdminServiceList = () => {
     const [data]=useContext(UserContext)
     const [allService,setAllService]=useState([])
     useEffect(()=>{
-        fetch('https://creative-agency-fullstack.herokuapp.com/show-orders')
+        fetch('https://creative-agency-b038d.web.app/show-orders')
         .then(res=>res.json())
         .then(result=>{
             setAllService(result)

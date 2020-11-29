@@ -7,7 +7,7 @@ const FeedbackDetails = ({feedback}) => {
     const [data]=useContext(UserContext)
     const deleteFeedbackHandler=(event)=>{
         
-        fetch('https://creative-agency-fullstack.herokuapp.com/delete-feedback',{
+        fetch('https://creative-agency-b038d.web.app/delete-feedback',{
             method:'DELETE',
             headers:{'Content-Type':'application/json', id:feedback._id}
         })

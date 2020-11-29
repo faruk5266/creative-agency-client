@@ -16,7 +16,7 @@ const Review = () => {
 
     const addReviewFormHandler=(e)=>{
         e.preventDefault()
-        fetch('https://creative-agency-fullstack.herokuapp.com/add-review',{
+        fetch('https://creative-agency-b038d.web.app/add-review',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(review)

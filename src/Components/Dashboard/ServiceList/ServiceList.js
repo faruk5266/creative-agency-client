@@ -8,7 +8,7 @@ import GeneralServiceList from './GeneralServiceList/GeneralServiceList';
 const ServiceList = () => {
     const [data,setData]=useContext(UserContext)
     useEffect(()=>{
-        data.user &&  fetch('https://creative-agency-fullstack.herokuapp.com/check-admin',{
+        data.user &&  fetch('https://creative-agency-b038d.web.app/check-admin',{
           method:'GET',
           headers:{
             'Content-Type':'application/json',

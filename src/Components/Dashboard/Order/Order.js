@@ -23,7 +23,7 @@ const Order = () => {
     console.log(data)
     const addOrderForm=(e)=>{
         e.preventDefault()
-        fetch('https://creative-agency-fullstack.herokuapp.com/add-order',{
+        fetch('https://creative-agency-b038d.web.app/add-order',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(order)

@@ -6,7 +6,7 @@ import loader from '../../../images/loader.gif'
 const Feedbacks = () => {
     const [allFeedbacks,setAllFeedbacks]=useState([])
     useEffect(()=>{
-        fetch('https://creative-agency-fullstack.herokuapp.com/show-feedbacks')
+        fetch('https://creative-agency-b038d.web.app/show-feedbacks')
         .then(res=>res.json())
         .then(result=>{
             setAllFeedbacks(result.slice(-6))

@@ -8,7 +8,7 @@ const AdminServiceListDetails = ({service}) => {
     const [pending, setPending]=useState(service.status.toLowerCase()=='pending')
     const statusHandler=(e)=>{
         setPending(!pending)
-        fetch('https://creative-agency-fullstack.herokuapp.com/update-status',{
+        fetch('https://creative-agency-b038d.web.app/update-status',{
             method:'PATCH',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify({

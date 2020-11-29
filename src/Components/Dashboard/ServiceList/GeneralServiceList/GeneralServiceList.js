@@ -11,7 +11,7 @@ const GeneralServiceList = () => {
     const [data]=useContext(UserContext)
   const [allService,setAllService]=useState([])
   useEffect(()=>{
-      fetch('https://creative-agency-fullstack.herokuapp.com/show-order-by-mail',{
+      fetch('https://creative-agency-b038d.web.app/show-order-by-mail',{
           method:'GET',
           headers:{
               'Content-Type':'application/json',
